@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class HomeComponent {
   @Input() title: string;
   count: number = 0;
+  items: number[] = [1, 2, 3, 4, 5];
+
   constructor() {}
 
   countNumber() {
