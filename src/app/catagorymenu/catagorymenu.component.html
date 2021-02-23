@@ -1,0 +1,10 @@
+<div class="container">
+  <!-- <div class="box subbox" *ngFor="let catalog of catagories">
+    <div style="background-color: wheat; width: 100%; height: 100%"></div>
+    <div style="text-align: center">{{ catalog.topic }}</div>
+  </div> -->
+  <div *ngFor="let item of catagories">
+    <div class="sub-item" [ngStyle]="{ 'background-color': item.color }"></div>
+    {{ item.topic }}
+  </div>
+</div>

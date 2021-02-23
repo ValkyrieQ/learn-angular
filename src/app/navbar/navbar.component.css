@@ -1,0 +1,64 @@
+.header {
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+  color: #fff;
+}
+
+.top-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+li {
+  font-size: 13px;
+  padding: 0px 5px;
+  border-left: 0.1px solid rgb(247, 157, 145);
+}
+
+.menu-left {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-right {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.menu-category {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-category li {
+  border: 0;
+}
+
+.no-border {
+  border: 0;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 3fr 12fr 2fr;
+  align-items: center;
+  justify-items: center;
+  width: 1200px;
+  margin: 10px auto;
+}
+
+.basket-icon {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.menu-category li {
+  font-size: 12px;
+  padding: 5px;
+}

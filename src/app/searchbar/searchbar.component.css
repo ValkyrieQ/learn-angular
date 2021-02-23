@@ -1,0 +1,22 @@
+.container {
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 15fr 1fr;
+  background: white;
+}
+
+input {
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+}
+
+button {
+  color: #fff;
+  background: rgb(251, 85, 51);
+  margin: 2px 3px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}

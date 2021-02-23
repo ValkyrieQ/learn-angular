@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "main main section1"
+    "main main section2";
+  grid-gap: 10px;
+  padding: 20px;
+}
+.container div {
+  padding: 50px 0px;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.box-main {
+  grid-area: main;
+  background-color: navy;
+}
+
+.box-section1 {
+  grid-area: section1;
+}
+
+.box-section2 {
+  grid-area: section2;
+}
