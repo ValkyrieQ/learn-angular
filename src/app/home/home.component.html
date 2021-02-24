@@ -1,24 +1,21 @@
-<h1>============ Homework 1 ============</h1>
 <app-navbar></app-navbar>
 <div class="content">
   <app-topbanner></app-topbanner>
   <app-catagorymenu></app-catagorymenu>
-</div>
-<hr />
+  <div>
+    <h2>{{ title }}</h2>
+    <div class="header">Set Title: <input [(ngModel)]="title" /></div>
+  </div>
 
-<div>
-  <h2>{{ title }}</h2>
-  <div class="header">Set Title: <input [(ngModel)]="title" /></div>
-</div>
+  <div>
+    <h2>{{ count }}</h2>
+    <button (click)="countNumber()">Count</button>
+  </div>
 
-<div>
-  <h2>{{ count }}</h2>
-  <button (click)="countNumber()">Count</button>
+  <ul>
+    <li *ngFor="let item of items">
+      <span *ngIf="item !== 5">{{ item }}</span>
+      <b *ngIf="item === 5">{{ item }}</b>
+    </li>
+  </ul>
 </div>
-
-<ul>
-  <li *ngFor="let item of items">
-    <span *ngIf="item !== 5">{{ item }}</span>
-    <b *ngIf="item === 5">{{ item }}</b>
-  </li>
-</ul>
